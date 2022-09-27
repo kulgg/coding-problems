@@ -1,4 +1,9 @@
 class Solution:
+    """
+    Leetcode Problem #1277
+    
+    Topics: Dynamic Programming
+    """
     def countSquares(self, matrix: List[List[int]]) -> int:
         m = len(matrix)
         n = len(matrix[0])
