@@ -9,18 +9,8 @@ class Solution:
 
 	Topics: Dynamic Programming
 	"""
-	def stoneGame(self, piles: List[int], alice_sum: int = 0, bob_sum: int= 0, aliceTurn: bool = True) -> bool:
-		n = len(piles)		
-		if n == 1:
-			return alice_sum > bob_sum + piles[0]
-		
-		if aliceTurn:
-			result = (self.stoneGame(piles[1:], alice_sum + piles[0], bob_sum, not aliceTurn)
-				or self.stoneGame(piles[:-1], piles[n-1] + alice_sum, bob_sum, not aliceTurn) )
-			self.cache[piles] = result
-		else:
-			return (self.stoneGame(piles[1:], alice_sum, piles[0] + bob_sum, not aliceTurn)
-			or self.stoneGame(piles[:-1], alice_sum, bob_sum + piles[n-1] , not aliceTurn) )
+	def stoneGame(self, piles: List[int]) -> bool:
+		return True
 
  
 def test_a():

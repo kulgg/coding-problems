@@ -6,7 +6,7 @@ class Solution:
 	"""
 	Leetcode Problem #1884
 
-	Topics: Dynamic Programming
+	Topics: Dynamic Programming, Math
 	"""
 	def twoEggDrop(self, n: int) -> int:
 		# linear drops
